@@ -450,9 +450,6 @@ START TRANSACTION;
 INSERT INTO `order` (customer_id, order_time, dine_type)
 VALUES (999, NOW(), '內用');
 
--- 插入失敗，MariaDB 自動觸發 rollback
--- 無需手動寫 ROLLBACK，但你也可以手動測試：
--- ROLLBACK;
 
 -- GROUP BY + HAVING
 SELECT 
